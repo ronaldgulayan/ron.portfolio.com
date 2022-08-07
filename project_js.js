@@ -39,10 +39,10 @@ new CreateProject("#content","https://www.mediafire.com/file/hs7hleonj8ymv4q/exa
 new CreateProject("#content","https://www.mediafire.com/file/deu67px757jcl79/Ron_application.apk/file", "#bbb", "project-img/person.gif", ["Python", "Kivy", "Kivymd"],"Ron Application","This is my application, It has many tools that will help you hehe");
 
 // VIDEO 1
-new CreateVideoProject("#content", "vid/shop-system.mp4", "#bbb", "img/ordering-img.png", ["Java", "MySQL"], "Shop Ordering System", "This is my first shop ordering system")
+new CreateVideoProject("#content", "vid/shop-system.MP4", "#bbb", "img/ordering-img.png", ["Java", "MySQL"], "Shop Ordering System", "This is my first shop ordering system")
 
 // VIDEO 2
-new CreateVideoProject("#content", "vid/school-management-system.mp4", "#bbb", "img/school-system.png", ["Java", "MySQL"], "School Management System", "This is my School management System")
+new CreateVideoProject("#content", "vid/school-management-system.MP4", "#bbb", "img/school-system.png", ["Java", "MySQL"], "School Management System", "This is my School management System")
 
 //CONTAINER
 const container = new CreateLowerContainer("lower-container","#fff", "50px");
