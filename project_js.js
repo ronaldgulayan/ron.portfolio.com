@@ -44,6 +44,9 @@ new CreateVideoProject("#content", "vid/shop-system.MP4", "#bbb", "img/ordering-
 // VIDEO 2
 new CreateVideoProject("#content", "vid/school-management-system.MP4", "#bbb", "img/school-system.png", ["Java", "MySQL"], "School Management System", "This is my School management System")
 
+// CALCULATOR
+new CreateProject("#content", "calculator/main.html", "#bbb", "img/calculator.png", ["html", "css", "javascript"], "Calculator", "This is my calculator idea")
+
 //CONTAINER
 const container = new CreateLowerContainer("lower-container","#fff", "50px");
 CreateLowerContainer.addStyle("#lower-container").boxShadow = "0px -1px 5px rgb(0,0,0,.2)"
