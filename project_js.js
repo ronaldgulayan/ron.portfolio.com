@@ -51,6 +51,15 @@ new CreateProject("#content", "calculator/main.html", "#bbb", "img/calculator.pn
 const container = new CreateLowerContainer("lower-container","#fff", "50px");
 CreateLowerContainer.addStyle("#lower-container").boxShadow = "0px -1px 5px rgb(0,0,0,.2)"
 
+// TIC TAC TOE PROJECT
+new CreateVideoProject("#content", "vid/tic-vid.mp4", "#bbb", "img/tic-img.png", ["Java"], "Tic Tac Toe", "This is my tic tac toe")
+
+// BMI CALCULATOR
+new CreateVideoProject("#content", "vid/bmi-vid.mp4", "#bbb", "img/bmi-img.png", ["Java", "mysql"], "BMI Calculator", "This is a BMI calculator(Body mass index) I made.")
+
+// -------------------------------------------------------------------------
+// -------------------------------------------------------------------------
+
 //ELEMENT
 container.addText("text1", "RonaldGulayan", "20px","#000", "sans-serif", "white", "0px 2px 5px rgb(0,0,0,.5)")
 CreateLowerContainer.addStyle(".text1").marginTop = "10px";
