@@ -1,0 +1,656 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+}
+
+/* POP UP */
+
+.popup-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    transition: all .1s ease-in-out;
+}
+
+.popup-menu {
+    width: 85%;
+    min-height: 100px;
+    border-radius: 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 9px;
+    transform: scale(0);
+    transition: all .1s ease-in-out;
+}
+
+.popup-title {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.popup-text {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-top: 3px;
+    word-spacing: .1rem;
+    color: #222;
+}
+
+.popup-ok-button {
+    width: 100%;
+    height: 26px;
+    margin-top: 10px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.popup-ok-button:hover {
+    background-color: rgb(0, 0, 153);
+}
+
+.popup-ok-button:active {
+    background-color: blue;
+}
+
+.popup-container.open {
+    background-color: rgb(0,0,0,.4);
+    z-index: 1;
+}
+
+.popup-container.open > .popup-menu {
+    transform: scale(1);
+}
+
+/* LOGIN CONTAINER ############################################*/
+
+.login-screen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+/* SEPARATOR */
+.separator {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px 0px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.email-label {
+    font-family: sans-serif;
+    margin: 4px 0px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.email-field {
+    width: 100%;
+    height: 25px;
+    outline: none;
+    padding: 2px 8px;
+    border: 1px solid rgb(110, 110, 255);
+}
+
+.password-label {
+    font-family: sans-serif;
+    margin: 4px 0px;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+}
+
+.password-container {
+    width: 100%;
+    display: flex;
+    border: 1px solid rgb(110, 110, 255);
+    height: 25px;
+    align-items: center;
+    padding: 0px 3px;
+    margin-bottom: 10px;
+}
+
+.password-container > input {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    outline-color: rgb(110, 110, 255);
+    padding: 2px 5px;
+    border: 1px solid rgb(110, 110, 255);
+    border: none;
+    outline: none;
+}
+
+.password-container > .eye-button {
+    width: 22px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.login-button {
+    width: 100%;
+    min-height: 28px;
+    font-family: sans-serif;
+    border: none;
+    background-color: rgb(29, 29, 255);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: rgb(0, 0, 199);
+}
+
+.login-button:active {
+    background-color: rgb(29, 29, 255);
+}
+
+.forgot-password {
+    color: rgb(29, 29, 255);
+    text-decoration: none;
+    font-family: sans-serif;
+    margin: 8px 0px;
+    font-size: 14px;
+    font-weight: 545;
+    margin-bottom: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.forgot-password:hover {
+    color: rgb(0, 0, 131);
+}
+
+.or {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -9px;
+    background-color: white;
+    width: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.create-new-account-container {
+    margin-top: 17px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.create-new-account-container > .create-account {
+    width: fit-content;
+    height: 30px;
+    padding: 0px 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.create-new-account-container > .create-account:hover {
+    background-color: rgb(0, 97, 0);
+}
+
+.create-new-account-container > .create-account:active {
+    background-color: green;
+}
+
+.language-container {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+
+.language-container > p {
+    user-select: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.language-container > p ~ p {
+    color: blue;
+}
+
+.language-container > p ~ p:hover {
+    color: rgb(0, 0, 138);
+}
+
+/* FORGOT PASSWORD CONTAINER ############################################*/
+
+.forgot-password-container {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.forgot-password-title {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px 0px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.forgot-password-find-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin: 6px 0px;
+}
+
+.forgot-password-find-title + p {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.forgot-password-field {
+    outline: none;
+    border: 1px solid #888;
+    height: 28px;
+    border-radius: 1px;
+    padding: 3px 7px;
+}
+
+.forgot-password-buttons-container {
+    width: 100%;
+    display: flex;
+    margin-top: 7px;
+    column-gap: 3px;
+    margin-bottom:8px;
+}
+
+.forgot-password-buttons-container > button {
+    flex: 1;
+    height: 28px;
+    border: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.forgot-password-cancel {
+    background-color: #bbb;
+}
+
+.forgot-password-cancel:hover {
+    background-color: #999;
+}
+
+.forgot-password-cancel:active {
+    background-color: #bbb;
+}
+
+.forgot-password-search {
+    background-color: blue;
+    color: white;
+}
+
+.forgot-password-search:hover {
+    background-color: rgb(0, 0, 146);
+}
+
+.forgot-password-search:active {
+    background-color: blue;
+}
+
+.forgot-password-search-instead {
+    font-family: sans-serif;
+    color: blue;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.forgot-password-search-instead:hover {
+    color: rgb(0, 0, 182);
+}
+
+.forgot-password-search-instead:active {
+    color: blue;
+}
+
+/* CREATE ACCOUNT SCREEN ######################################*/
+
+.create-account-screen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.create-account-screen button {
+    user-select: none;
+}
+
+.img-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    margin-top: 30px;
+}
+
+.img-container > img {
+    width: 70%;
+}
+
+.img-container + p {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.img-container + p + p {
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.join-next-button {
+    width: 100%;
+    height: 28px;
+    margin-top: 15px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.join-next-button:hover {
+    background-color: rgb(0, 0, 138);
+}
+
+.join-next-button:active {
+    background-color: blue;
+}
+
+.join-next-button-cancel {
+    width: 100%;
+    height: 28px;
+    margin-top: 5px;
+    border: none;
+    background-color: #aaa;
+    color: black;
+    border-radius: 4px;
+    font-family: sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.join-next-button-cancel:hover {
+    background-color: #999;
+}
+
+.join-next-button-cancel:active {
+    background-color: #aaa;
+}
+
+/* FIRST STEP TO CREATE ACCOUNT ############################## */
+
+.create-first-step-screen {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.first-step-title {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px 0px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.whats-your-name {
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: sans-serif;
+}
+
+.whats-your-name + p {
+    width: 100%;
+    text-align: center;
+    color: #333;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+.first-step-buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    width: 100%;
+    column-gap: 5px;
+}
+
+.first-step-buttons-container > p {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.first-step-buttons-container > input {
+    width:100%;
+    border-radius: 2px;
+    border: 1px solid #888;
+    height: 28px;
+    outline: none;
+    padding: 2px 5px;
+}
+
+.first-step-next {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.first-step-next:hover {
+    background-color: rgb(0, 0, 139);
+}
+
+.first-step-next:active {
+    background-color: blue;
+}
+
+/* CREATE ACCOUNT SECOND STEP ############################## */
+
+.create-second-step-screen {
+    display: none;
+    flex-direction: column;
+}
+
+.second-step-signup-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.second-step-title {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px 0px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.enter-numberOrEmail {
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.enter-numberOrEmail + p {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: #222;
+    font-family: sans-serif;
+    margin-top: 5px;
+    padding: 0px 5px;
+}
+
+.second-step-field-container {
+    margin-top: 20px;
+}
+
+.second-step-field-container > p {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.second-step-field-container > input {
+    width: 100%;
+    padding: 3px 8px;
+    border: 1px solid #999;
+    outline: none;
+    height: 28px;
+}
+
+.second-step-next-button {
+    margin-top: 9px;
+    height: 30px;
+    border: none;
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.second-step-next-button:hover {
+    background-color: rgb(0, 0, 163);
+}
+
+.second-step-next-button:active {
+    background-color: blue;
+}
+
+.signup-with-button {
+    border: none;
+    margin-top: 10px;
+    color: blue;
+    font-weight: bold;
+    background: transparent;
+    font-size: 15px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.signup-with-button:hover {
+    color: rgb(0, 0, 146);
+}
+
+.signup-with-button:active {
+    color: rgb(21, 21, 255);
+}
+
+.signup-with-email {
+    display: none;
+}
+
+
+@media (max-width: 2000px) {
+    .facebook-container {
+        width: 300px; 
+        height: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .facebook-container {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 370px) {
+    .facebook-container {
+        width: 100%;
+        height: 100%;
+    }
+}
