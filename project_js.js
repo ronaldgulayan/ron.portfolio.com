@@ -23,9 +23,6 @@ new CreateProject("#content","https://bit.ly/3Os5uQh", "#bbb", "project-img/max.
 // MY FIRST PORTFOLIO
 new CreateProject("#content","https://ronaldgulayan.github.io/my-website-main.com/Ronald.html", "#bbb", "project-img/img-2.jpeg", ["html", "css", "javascript"],"My First Portfolio","This is the very first portfolio I made, I made it when i was just a beginner in coding.")
 
-// MY SECOND PORTFOLIO
-new CreateProject("#content","https://ronaldgulayan.github.io/ron.github.io/main.html", "#bbb", "project-img/img-1.jpeg", ["html", "css", "javascript"],"My Second Portfolio","This is my second Portfolio");
-
 // MY FIRST STUDENT FORM
 new CreateProject("#content","https://ronaldgulayan.github.io/student_form.com/Ronald.html", "#bbb", "project-img/studentform.png", ["html", "css"],"My First Student Form","This is my first Student form");
 
