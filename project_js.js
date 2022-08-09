@@ -44,20 +44,24 @@ new CreateVideoProject("#content", "vid/school-management-system.MP4", "#bbb", "
 // CALCULATOR
 new CreateProject("#content", "calculator/main.html", "#bbb", "img/calculator.png", ["html", "css", "javascript"], "Calculator", "This is my calculator idea")
 
-//CONTAINER
-const container = new CreateLowerContainer("lower-container","#fff", "50px");
-CreateLowerContainer.addStyle("#lower-container").boxShadow = "0px -1px 5px rgb(0,0,0,.2)"
-
 // TIC TAC TOE PROJECT
 new CreateVideoProject("#content", "vid/tic-vid.mp4", "#bbb", "img/tic-img.png", ["Java"], "Tic Tac Toe", "This is my tic tac toe")
 
 // BMI CALCULATOR
 new CreateVideoProject("#content", "vid/bmi-vid.mp4", "#bbb", "img/bmi-img.png", ["Java", "mysql"], "BMI Calculator", "This is a BMI calculator(Body mass index) I made.")
 
+// FACEBOOK CLONE
+new CreateProject("#content","facebook/main.html", "#bbb", "img/facebook.png", ["html", "css", "javascript"],"Facebook lite clone","This is my facebook lite clone");
+
 // -------------------------------------------------------------------------
 // -------------------------------------------------------------------------
 
 //ELEMENT
+
+//CONTAINER
+const container = new CreateLowerContainer("lower-container","#fff", "50px");
+CreateLowerContainer.addStyle("#lower-container").boxShadow = "0px -1px 5px rgb(0,0,0,.2)"
+
 container.addText("text1", "RonaldGulayan", "20px","#000", "sans-serif", "white", "0px 2px 5px rgb(0,0,0,.5)")
 CreateLowerContainer.addStyle(".text1").marginTop = "10px";
 container.addText("text2", "ronaldgulayan00@gmail.com", "16px","#000", "sans-serif", "white", "0px 2px 5px rgb(0,0,0,.2)")
