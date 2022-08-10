@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+</head>
+<body>  
+
+    <div class="popup-container">
+
+        <div class="popup-x-button">x</div>
+
+        <div class="popup-menu">
+            
+            <div class="winner-container">
+                <p class="popup-name-field">null</p>
+                <p class="winner-text">Winner</p>
+            </div>
+
+            <img src="" class="winner-image">
+            <p part="hero-used-text">Hero used</p>
+
+        </div>
+    </div>
+
+    <div class="main-container">
+
+        <!-- FIGHT FIELD -->
+        <div class="fight-field-container">
+
+            <!-- ATTACK DAMAGE -->
+            <div class="attack-damage-container">
+                
+                <div class="attack">
+                    <img src="img/attack/rock.png" alt="attack" class="rock" value="60">
+                    <p>60 dmg</p>
+                </div>
+
+                <div class="attack">
+                    <img src="img/attack/paper.png" alt="attack" class="paper" value="50">
+                    <p>50 dmg</p>
+                </div>
+
+                <div class="attack">
+                    <img src="img/attack/scissor.png" alt="attack" class="scissor" value="55">
+                    <p>55 dmg</p>
+                </div>
+
+            </div> <!--ATTACK DAMAGE END-->
+            
+            <div class="fighting-field">
+
+                <img src="" class="allied-field">
+                <p class="result-field">Choose Attack</p>
+                <img src="" class="enemy-field">
+
+            </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="buttons-container">
+            <div class="attack-buttons">
+                <button class="rock-button button b" data-path="img/allied/allied-rock.png">Rock</button>
+                <button class="paper-button button b" data-path="img/allied/allied-paper.png">Paper</button>
+                <button class="scissor-button button b" data-path="img/allied/allied-scissor.png">Scissor</button>
+            </div>
+            <button class="fight-button d786578 b">FIGHT!</button>
+            <button class="reset-button d786578 b">RESET</button>
+        </div>
+
+        <!-- START CONTAINER -->
+        <div class="start-container">
+            
+            <p class="choose-hero-text">Choose hero</p>
+            <div class="start-hero-container"> 
+
+                <!-- ALLIED HERO CONTAINER -->
+                <div class="allied-hero-container allied-container">
+                    <p class="allied-minus-damage dd"></p>
+                    <p class="allied-name name"></p>
+                    <progress max="600" value="600" class="allied-health hp">
+                    </progress>
+                    <img src="img/char/allied-image-1.png" alt="Allied Image" class="hero allied-hero">
+                    <button class="allied-hero-button-next">Next</button>
+                </div>
+
+                <!-- START BUTTON -->
+                <div class="start-button-container">
+                    <input type="text" placeholder="Type your Name" class="name-field start-button00">
+                    <button class="start-button start-button00">Start</button>
+                </div>
+                
+
+                <!-- ENEMY HERO CONTAINER -->
+                <div class="enemy-hero-container allied-container">
+                    <p class="enemy-minus-damage dd"></p>
+                    <p class="computer-name name">Computer</p>
+                    <progress max="600" value="600" class="enemy-health hp"></progress>
+                    <img src="" alt="Allied Image" class="hero enemy-hero">
+                </div>
+            </div>
+
+        </div> <!--START CONTAINER ENDING-->
+
+
+    </div>
+
+</body>
+</html>
