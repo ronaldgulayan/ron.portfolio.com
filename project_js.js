@@ -53,6 +53,9 @@ new CreateVideoProject("#content", "vid/bmi-vid.mp4", "#bbb", "img/bmi-img.png",
 // FACEBOOK CLONE
 new CreateProject("#content","facebook/main.html", "#bbb", "img/facebook.png", ["html", "css", "javascript"],"Facebook lite clone","This is my facebook lite clone");
 
+// ROCK PAPER AND SCISSOR
+new CreateProject("#content","rockpaperscissor/main.html", "#bbb", "img/rockpaper-img.png", ["html", "css", "javascript"],"Rock paper scissor","Trippings");
+
 // -------------------------------------------------------------------------
 // -------------------------------------------------------------------------
 
