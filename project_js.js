@@ -18,22 +18,22 @@ menuButton.addEventListener("click",()=>{
 })
 
 // MAX WEBSITE
-new CreateProject("#content","https://bit.ly/3Os5uQh", "#bbb", "project-img/max.jpg", ["html", "css", "javascript"],"Max Website","This is our dog, he was born to be an assassin");
+new CreateProject("#content","https://bit.ly/3Os5uQh", "#bbb", "project-img/max.jpg", ["html", "css", "javascript"],"Max Website","This is our dog website");
 
 // MY FIRST PORTFOLIO
-new CreateProject("#content","https://ronaldgulayan.github.io/my-website-main.com/Ronald.html", "#bbb", "project-img/img-2.jpeg", ["html", "css", "javascript"],"My First Portfolio","This is the very first portfolio I made, I made it when i was just a beginner in coding.")
+new CreateProject("#content","https://ronaldgulayan.github.io/my-website-main.com/Ronald.html", "#bbb", "project-img/img-2.jpeg", ["html", "css", "javascript"],"My First Portfolio","This is my first portfolio.")
 
 // MY FIRST STUDENT FORM
 new CreateProject("#content","https://ronaldgulayan.github.io/student_form.com/Ronald.html", "#bbb", "project-img/studentform.png", ["html", "css"],"My First Student Form","This is my first Student form");
 
 // CHATTING APPLICATION
-new CreateProject("#content","https://www.mediafire.com/file/p8q4mxmsjryfeep/chatapp-0.1-arm64-v8a_armeabi-v7a-debug.apk/file", "#bbb", "project-img/chatapp.png", ["Python","Kivy","Kivymd"],"Chatapp Application","Here are the chat apps I made, you can chat here but only at close distance.");
+new CreateProject("#content","https://www.mediafire.com/file/p8q4mxmsjryfeep/chatapp-0.1-arm64-v8a_armeabi-v7a-debug.apk/file", "#bbb", "project-img/chatapp.png", ["Python","Kivy","Kivymd"],"Chatapp Application","Chat application");
 
 // PORTFOLIO APPLICATION
 new CreateProject("#content","https://www.mediafire.com/file/hs7hleonj8ymv4q/exampleApp.apk/file", "#bbb", "project-img/img-3.jpg", ["Java"],"Code Art apps","This is my portfolio application");
 
 // MY APPLICATION
-new CreateProject("#content","https://www.mediafire.com/file/deu67px757jcl79/Ron_application.apk/file", "#bbb", "project-img/person.gif", ["Python", "Kivy", "Kivymd"],"Ron Application","This is my application, It has many tools that will help you hehe");
+new CreateProject("#content","https://www.mediafire.com/file/deu67px757jcl79/Ron_application.apk/file", "#bbb", "project-img/person.gif", ["Python", "Kivy", "Kivymd"],"Ron Application","-");
 
 // VIDEO 1
 new CreateVideoProject("#content", "vid/shop-system.MP4", "#bbb", "img/ordering-img.png", ["Java", "MySQL"], "Shop Ordering System", "This is my first shop ordering system")
@@ -42,16 +42,16 @@ new CreateVideoProject("#content", "vid/shop-system.MP4", "#bbb", "img/ordering-
 new CreateVideoProject("#content", "vid/school-management-system.MP4", "#bbb", "img/school-system.png", ["Java", "MySQL"], "School Management System", "This is my School management System")
 
 // CALCULATOR
-new CreateProject("#content", "calculator/main.html", "#bbb", "img/calculator.png", ["html", "css", "javascript"], "Calculator", "This is my calculator idea")
+new CreateProject("#content", "calculator/main.html", "#bbb", "img/calculator.png", ["html", "css", "javascript"], "Calculator", "This is my calculator design")
 
 // TIC TAC TOE PROJECT
 new CreateVideoProject("#content", "vid/tic-vid.mp4", "#bbb", "img/tic-img.png", ["Java"], "Tic Tac Toe", "This is my tic tac toe")
 
 // BMI CALCULATOR
-new CreateVideoProject("#content", "vid/bmi-vid.mp4", "#bbb", "img/bmi-img.png", ["Java", "mysql"], "BMI Calculator", "This is a BMI calculator(Body mass index) I made.")
+new CreateVideoProject("#content", "vid/bmi-vid.mp4", "#bbb", "img/bmi-img.png", ["Java", "mysql"], "BMI Calculator", "This is a BMI calculator(Body mass index).")
 
 // FACEBOOK CLONE
-new CreateProject("#content","facebook/main.html", "#bbb", "img/facebook.png", ["html", "css", "javascript"],"Facebook lite clone","This is my facebook lite clone");
+new CreateProject("#content","facebook/main.html", "#bbb", "img/facebook.png", ["html", "css", "javascript"],"Facebook lite clone","This is my facebook lite clone design");
 
 // ROCK PAPER AND SCISSOR
 new CreateProject("#content","rockpaperscissor/main.html", "#bbb", "img/rockpaper-img.png", ["html", "css", "javascript"],"Rock paper scissor","Trippings");
